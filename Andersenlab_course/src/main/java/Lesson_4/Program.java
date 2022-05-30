@@ -1,5 +1,8 @@
 package Lesson_4;
-public class Cat {
+
+
+import java.util.Random;
+public class Program {
     public static void main(String[] args) {
         Cat cat1 = new Cat("Dymok");
         Cat cat2 = new Cat("Pushok");
@@ -49,7 +52,7 @@ public class Cat {
 
 
         public void info() { // выводит сведения об объекте в разрезе дейсвтий
-            System.out.println(this.type + " " + this.name + " Run: " + this.maxRun + " m., Swim: " + this.maxSwim + " m., Jump: " + this.maxJump + " m.");
+            System.out.println(this.type + " " + this.name + " Run: " + this.maxRun + " m., Swim: " + this.maxSwim + " m.");
         }
     }
 
