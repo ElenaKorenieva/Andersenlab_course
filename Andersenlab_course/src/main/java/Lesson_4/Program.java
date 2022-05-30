@@ -1,7 +1,5 @@
 package Lesson_4;
 
-
-import java.util.Random;
 public class Program {
     public static void main(String[] args) {
         Cat cat1 = new Cat("Dymok");
@@ -34,7 +32,7 @@ public class Program {
         protected String type;
         protected int maxRun;
         protected int maxSwim;
-        public Random random = new Random();
+
 
         public Animals(String name){
             this.name = name;
@@ -59,7 +57,7 @@ public class Program {
     public static class Cat extends Animals {
         public Cat(String name) {
             super(name);
-            this.maxRun = random.nextInt(45) + 155;
+            this.maxRun = 200;
             this.type = "Cat";
         }
 
@@ -73,8 +71,8 @@ public class Program {
         public Dog(String name) {
             super(name);
             this.type = "Dog";
-            this.maxRun = random.nextInt(300) + 300;
-            this.maxSwim = random.nextInt(6) + 5;
+            this.maxRun = 500;
+            this.maxSwim = 10;
         }
     }
 }
